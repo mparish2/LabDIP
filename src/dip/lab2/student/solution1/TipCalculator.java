@@ -3,18 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dip.lab1.student.solution1;
+package dip.lab2.student.solution1;
 
 /**
  *
  * @author Matthew_2
  */
-public class HRService {
-    //high level / boss class, gives work
+public interface TipCalculator {
+   
     
-    public double getYearlyEmpComp(Employee e){
-        return e.getYearlyEarnings();
-    }
+    public abstract double getTip();
+    
     
     
 }

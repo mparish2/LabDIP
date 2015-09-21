@@ -1,6 +1,7 @@
-package dip.lab2;
+package dip.lab2.student.solution1;
 
 // An useful import if you need it.
+import dip.lab2.student.solution1.TipCalculator;
 import java.text.NumberFormat;
 // Another useful import if you need it.
 import javax.swing.JOptionPane;
@@ -19,11 +20,19 @@ import javax.swing.JOptionPane;
  * @author your name goes here
  */
 public class Startup {
-    public static enum ServiceQuality {
-           GOOD, FAIR, POOR
-    };
  
     public static void main(String[] args) {
+        
+        TipCalculator tc1 = new BaggageServiceTipCalculator(ServiceQuality.GOOD,4);
+        TipCalculator tc2 = new FoodServiceTipCalculator(ServiceQuality.POOR,150);
+         
+        TipCalculator[] TipArray = {tc1,tc2};
+        
+        ServiceTip st = new ServiceTip();
+        
+        for(TipCalculator tc : TipArray){
+                System.out.println(tc.getTip());
+        }
         
         
     }

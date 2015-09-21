@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dip.lab1.student.solution1;
+package dip.lab2.student.solution1;
+
+import dip.lab2.student.solution1.TipCalculator;
+
+
 
 /**
  *
  * @author Matthew_2
  */
-public class HRService {
-    //high level / boss class, gives work
-    
-    public double getYearlyEmpComp(Employee e){
-        return e.getYearlyEarnings();
+public class ServiceTip {
+    public double getBillTotal(TipCalculator t){
+        return t.getTip();
     }
-    
-    
 }
