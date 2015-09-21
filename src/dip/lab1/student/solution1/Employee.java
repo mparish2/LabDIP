@@ -11,5 +11,7 @@ package dip.lab1.student.solution1;
  */
 public interface Employee {
     //abstraction class
+    //brought this method up only because it is all that is need to get the corresponding output.
+    // but you can bring up other methods that are similiar
     public abstract double getYearlyEarnings();  
 }
