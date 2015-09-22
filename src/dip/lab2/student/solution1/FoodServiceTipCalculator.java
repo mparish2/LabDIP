@@ -1,7 +1,6 @@
 package dip.lab2.student.solution1;
 
-import dip.lab2.student.solution1.ServiceQuality;
-import dip.lab2.student.solution1.TipCalculator;
+
 
 /**
  * An example low-level class. Does this class definition follow the DIP?

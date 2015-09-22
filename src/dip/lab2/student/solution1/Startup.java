@@ -1,7 +1,7 @@
 package dip.lab2.student.solution1;
 
 // An useful import if you need it.
-import dip.lab2.student.solution1.TipCalculator;
+;
 import java.text.NumberFormat;
 // Another useful import if you need it.
 import javax.swing.JOptionPane;
@@ -31,7 +31,7 @@ public class Startup {
         ServiceTip st = new ServiceTip();
         
         for(TipCalculator tc : TipArray){
-                System.out.println(tc.getTip());
+                System.out.println("$ " +st.getBillTotal(tc));
         }
         
         

@@ -4,11 +4,6 @@
  * and open the template in the editor.
  */
 package dip.lab2.student.solution1;
-
-import dip.lab2.student.solution1.TipCalculator;
-
-
-
 /**
  *
  * @author Matthew_2

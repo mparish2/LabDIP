@@ -25,12 +25,11 @@ public class HourEmpPlusTip implements Employee {
     // final concrete methods. also don't want them to change
 
     public final double getHourRate() {
-        return hourRate + 20; // to show that you can add more lower Modules
+        return hourRate + 2; // to show that you can add more lower Modules
                                           // w/o breaking the program
     }
 
-    //validateing because you don't want negative number
-    //of $'s per hours or  to much of asurplus
+    
     public final void setHourRate(double hourRate) {
         if (hourRate < 0 || hourRate > 400) {
             System.out.println("Illegal $'s per hour");

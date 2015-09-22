@@ -31,7 +31,7 @@ public class HourEmp implements Employee {
         return hourRate;
     }
 
-    //validateing because you don't want negative number of $'s per hours or surplus
+    
     public final void setHourRate(double hourRate) {
         if (hourRate < 0 || hourRate > 450) {
             System.out.println("Illegal $'s per hour");

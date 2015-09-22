@@ -10,18 +10,36 @@ package dip.lab1.student.solution1;
  * @author Matthew_2
  */
 public class SalaryEmployees implements Employee {
-    private double yearlySalary; // making these final would be bad here?
-    private double yearlyBonus; // because you might have more that 1 sal emps?
+    private double yearlySalary; // final? 
+    private double yearlyBonus; 
+
+    public double getYearlySalary() {
+        return yearlySalary;
+    }
+
+    public final void setYearlySalary(double yearlySalary) {
+        this.yearlySalary = yearlySalary;
+    }
+
+    public double getYearlyBonus() {
+        return yearlyBonus;
+    }
+
+    public final void setYearlyBonus(double yearlyBonus) {
+        /// do validation
+
+        this.yearlyBonus = yearlyBonus;
+    }
 
     
-    
+    // by using setter methods you can validate incoming arguments
     public SalaryEmployees(double yearlySalary, double yearlyBonus) {
-        this.yearlySalary = yearlySalary;
-        this.yearlyBonus = yearlyBonus;
+        setYearlySalary(yearlySalary);
+        setYearlyBonus(yearlyBonus);
     }
     
     @Override
-    public double getYearlyEarnings() {
+    public final double getYearlyEarnings() {
        return yearlySalary + yearlyBonus;
     }
     

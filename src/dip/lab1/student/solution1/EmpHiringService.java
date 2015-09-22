@@ -9,7 +9,7 @@ package dip.lab1.student.solution1;
  *
  * @author Matthew_2
  */
-public class HRService {
+public class EmpHiringService {
     //high level / boss class, gives work
     
     public double getYearlyEmpComp(Employee e){
